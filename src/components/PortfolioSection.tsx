@@ -3,21 +3,25 @@ const portfolioItems = [
     name: "Green Valley Public School",
     type: "CBSE · Whitefield",
     color: "bg-primary/5",
+    url: "https://greenvalleybalaghat.co.in/",
   },
   {
     name: "Sri Vidya Academy",
     type: "State Board · Rajajinagar",
     color: "bg-accent/10",
+    url: "https://srivani.edu.in/ramavana/",
   },
   {
     name: "Hope International School",
     type: "CBSE · Electronic City",
     color: "bg-primary/5",
+    url: "https://www.hopeinternationalschool.org/",
   },
   {
     name: "Saraswathi Vidyalaya",
     type: "State Board · Basavanagudi",
     color: "bg-accent/10",
+    url: "https://www.saraswathividyalaya.edu.in/",
   },
 ];
 
@@ -36,7 +40,7 @@ const PortfolioSection = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {portfolioItems.map((item, i) => (
-            <div key={i} className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-md transition-shadow">
+            <a key={i} href={item.url} target="_blank" rel="noopener noreferrer" className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-md transition-shadow block">
               <div className={`${item.color} h-40 flex items-center justify-center`}>
                 <div className="text-center">
                   <div className="w-12 h-12 rounded-lg bg-surface mx-auto mb-2 flex items-center justify-center shadow-sm">
@@ -51,7 +55,7 @@ const PortfolioSection = () => {
                 <h3 className="font-heading font-semibold text-sm text-foreground">{item.name}</h3>
                 <p className="text-xs text-muted-foreground">{item.type}</p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>
