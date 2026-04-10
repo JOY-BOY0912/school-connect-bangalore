@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <p className="font-heading font-bold text-lg mb-3">
-              School<span className="opacity-70">Stack</span>
+              Ishy<span className="opacity-70">ukt</span>
             </p>
             <p className="text-sm opacity-70 leading-relaxed">
               Simple websites and smart tools for schools in Bangalore. We keep things practical.
@@ -18,9 +18,9 @@ const Footer = () => {
             <p className="font-heading font-semibold mb-3">Services</p>
             <ul className="space-y-2 text-sm opacity-70">
               <li>School Websites</li>
-              <li>Admission Enquiry System</li>
-              <li>AI Calling & Chat</li>
-              <li>Email Automation</li>
+              <li>Admission System</li>
+              <li>AI Call & Chat</li>
+              <li>Follow-up Automation</li>
             </ul>
           </div>
 
@@ -37,20 +37,17 @@ const Footer = () => {
             <p className="font-heading font-semibold mb-3">Contact Us</p>
             <ul className="space-y-2 text-sm opacity-70">
               <li className="flex items-center gap-2">
-                <Phone className="w-4 h-4" /> +91 98765 43210
-              </li>
-              <li className="flex items-center gap-2">
-                <Mail className="w-4 h-4" /> hello@schoolstack.in
+                <Mail className="w-4 h-4" /> hello@ishyukt.in
               </li>
               <li className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 mt-0.5" /> Koramangala, Bangalore
+                <MapPin className="w-4 h-4 mt-0.5" /> Bangalore, India
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-primary-foreground/10 mt-8 pt-6 text-center text-xs opacity-50">
-          © 2024 SchoolStack. All rights reserved.
+          © 2024 Ishyukt. All rights reserved.
         </div>
       </div>
     </footer>
