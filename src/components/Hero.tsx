@@ -11,11 +11,11 @@ const Hero = () => {
           </div>
 
           <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
-            Simple Websites & Smart Tools for Your School
+            Websites + AI Tools for Schools That Want to Work Smarter
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8 max-w-2xl mx-auto">
-            We help schools get more admission inquiries, respond to parents faster, and reduce manual work — without making things complicated.
+            We help schools manage admissions better with simple websites, automated calls, chat support, and follow-up systems.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -23,7 +23,7 @@ const Hero = () => {
               Get Free Demo <ArrowRight className="w-4 h-4" />
             </Button>
             <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2">
-              <Play className="w-4 h-4" /> See Sample Website
+              <Play className="w-4 h-4" /> See How It Works
             </Button>
           </div>
 

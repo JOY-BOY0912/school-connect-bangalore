@@ -3,23 +3,23 @@ import { Globe, MessageSquare, PhoneCall, Mail } from "lucide-react";
 const services = [
   {
     icon: Globe,
-    title: "School Website Development",
-    desc: "Simple, clean, mobile-friendly websites with all your school details — admissions, fee structure, gallery, contact info. Nothing fancy, just what parents need.",
+    title: "School Website",
+    desc: "Clean, mobile-friendly, and easy to update. All your school info in one place — admissions, fees, gallery, contact details.",
   },
   {
     icon: MessageSquare,
-    title: "Admission Enquiry System",
-    desc: "Online forms that capture parent inquiries and send them straight to your WhatsApp. No more missed calls or lost paper forms.",
+    title: "Admission System",
+    desc: "Online forms that capture parent inquiries. Integrated with WhatsApp so you can track and respond quickly.",
   },
   {
     icon: PhoneCall,
-    title: "AI Calling & Chat Support",
-    desc: "Automate basic admission calls and answer common questions like fees, timings, and available seats — even after office hours.",
+    title: "AI Call & Chat Support",
+    desc: "Reduce manual work for staff. Answer common parent questions automatically — even after office hours.",
   },
   {
     icon: Mail,
-    title: "Follow-up & Email Automation",
-    desc: "Automatically send reminders and updates to parents who enquired. You don't have to remember to follow up manually.",
+    title: "Follow-up Automation",
+    desc: "Stay connected with parents without extra effort. Reminders and updates go out on their own.",
   },
 ];
 

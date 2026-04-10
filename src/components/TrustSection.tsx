@@ -20,7 +20,7 @@ const testimonials = [
     school: "Maria Niketan High School",
   },
   {
-    quote: "We were spending too much time answering same questions on phone. Now the WhatsApp auto-reply handles most of it.",
+    quote: "We started using the call follow-up system, and it helped us handle admission inquiries better without extra staff.",
     name: "Meera Bhat",
     role: "Office Coordinator",
     school: "Mahila Seva Samaja High School",
@@ -32,7 +32,7 @@ const testimonials = [
     school: "Mother Teresa Public School, Jalahalli",
   },
   {
-    quote: "The follow-up emails go automatically now. Parents get admission updates without us having to call each one separately.",
+    quote: "The automated follow-up messages save us a lot of time. Parents get admission updates without us having to call each one separately.",
     name: "Anitha S.",
     role: "Admin Staff",
     school: "Cambridge School, KR Puram",
