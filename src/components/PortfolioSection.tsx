@@ -19,7 +19,7 @@ const portfolioItems = [
   {
     name: "Hope International School",
     type: "CBSE · Electronic City",
-    url: "https://www.hopeinternationalschool.org/",
+    url: "https://www.school.hopeglob.com/",
     image: previewHope,
   },
   {
