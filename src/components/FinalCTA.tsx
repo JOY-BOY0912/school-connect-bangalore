@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-const FinalCTA = () => {
+interface FinalCTAProps {
+  onDemoClick: () => void;
+}
+
+const FinalCTA = ({ onDemoClick }: FinalCTAProps) => {
   return (
     <section className="py-16 md:py-24">
       <div className="container">
@@ -12,7 +16,7 @@ const FinalCTA = () => {
           <p className="text-muted-foreground mb-6 max-w-lg mx-auto">
             Start with a simple system. Add automation when you need it. We'll guide you through everything.
           </p>
-          <Button size="lg" className="gap-2">
+          <Button size="lg" className="gap-2" onClick={onDemoClick}>
             Book a Free Demo <ArrowRight className="w-4 h-4" />
           </Button>
           <p className="text-xs text-muted-foreground mt-3">

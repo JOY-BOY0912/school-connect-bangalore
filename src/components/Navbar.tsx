@@ -2,7 +2,11 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const Navbar = () => {
+interface NavbarProps {
+  onDemoClick: () => void;
+}
+
+const Navbar = ({ onDemoClick }: NavbarProps) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -20,7 +24,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
-          <Button size="sm">Get Free Demo</Button>
+          <Button size="sm" onClick={onDemoClick}>Get Free Demo</Button>
         </div>
 
         <button className="md:hidden" onClick={() => setOpen(!open)}>
@@ -34,7 +38,7 @@ const Navbar = () => {
           <a href="#results" className="block text-sm py-2" onClick={() => setOpen(false)}>Results</a>
           <a href="#pricing" className="block text-sm py-2" onClick={() => setOpen(false)}>Pricing</a>
           <a href="#testimonials" className="block text-sm py-2" onClick={() => setOpen(false)}>Testimonials</a>
-          <Button className="w-full" size="sm">Get Free Demo</Button>
+          <Button className="w-full" size="sm" onClick={() => { setOpen(false); onDemoClick(); }}>Get Free Demo</Button>
         </div>
       )}
     </nav>

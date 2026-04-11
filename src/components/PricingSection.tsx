@@ -48,7 +48,11 @@ const plans = [
   },
 ];
 
-const PricingSection = () => {
+interface PricingSectionProps {
+  onDemoClick: () => void;
+}
+
+const PricingSection = ({ onDemoClick }: PricingSectionProps) => {
   return (
     <section id="pricing" className="py-16 md:py-24 bg-surface">
       <div className="container">
@@ -90,7 +94,7 @@ const PricingSection = () => {
                 ))}
               </ul>
 
-              <Button variant={plan.popular ? "default" : "outline"} className="w-full">
+              <Button variant={plan.popular ? "default" : "outline"} className="w-full" onClick={onDemoClick}>
                 Get Started
               </Button>
             </div>
