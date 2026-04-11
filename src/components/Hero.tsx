@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 
-const Hero = () => {
+interface HeroProps {
+  onDemoClick: () => void;
+}
+
+const Hero = ({ onDemoClick }: HeroProps) => {
   return (
     <section className="py-16 md:py-24 lg:py-32">
       <div className="container">
@@ -19,7 +23,7 @@ const Hero = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <Button size="lg" className="w-full sm:w-auto gap-2">
+            <Button size="lg" className="w-full sm:w-auto gap-2" onClick={onDemoClick}>
               Get Free Demo <ArrowRight className="w-4 h-4" />
             </Button>
             <Button variant="outline" size="lg" className="w-full sm:w-auto gap-2">

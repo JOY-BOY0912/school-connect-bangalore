@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TrustSection from "@/components/TrustSection";
@@ -11,12 +12,15 @@ import PricingSection from "@/components/PricingSection";
 import StartSimpleSection from "@/components/StartSimpleSection";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import DemoFormDialog from "@/components/DemoFormDialog";
 
 const Index = () => {
+  const [demoOpen, setDemoOpen] = useState(false);
+
   return (
     <div className="min-h-screen">
-      <Navbar />
-      <Hero />
+      <Navbar onDemoClick={() => setDemoOpen(true)} />
+      <Hero onDemoClick={() => setDemoOpen(true)} />
       <ProblemsSection />
       <ServicesSection />
       <AIToolsSection />
@@ -24,10 +28,11 @@ const Index = () => {
       <TrustSection />
       <ProcessSection />
       <PortfolioSection />
-      <PricingSection />
+      <PricingSection onDemoClick={() => setDemoOpen(true)} />
       <StartSimpleSection />
-      <FinalCTA />
+      <FinalCTA onDemoClick={() => setDemoOpen(true)} />
       <Footer />
+      <DemoFormDialog open={demoOpen} onOpenChange={setDemoOpen} />
     </div>
   );
 };
