@@ -1,7 +1,6 @@
 import previewGreenvalley from "@/assets/preview-greenvalley.jpg";
-import previewSrividya from "@/assets/preview-srividya.jpg";
-import previewHope from "@/assets/preview-hope.jpg";
-import previewSaraswathi from "@/assets/preview-saraswathi.jpg";
+import previewRoyal from "@/assets/preview-royal.png";
+import previewNewOxford from "@/assets/preview-newoxford.png";
 
 const portfolioItems = [
   {
@@ -11,22 +10,16 @@ const portfolioItems = [
     image: previewGreenvalley,
   },
   {
-    name: "Sri Vidya Academy",
-    type: "State Board · Rajajinagar",
-    url: "https://srivani.edu.in/ramavana/",
-    image: previewSrividya,
+    name: "Royal Public School",
+    type: "CBSE · J P Nagar",
+    url: "https://royalpublicschooljpn.in",
+    image: previewRoyal,
   },
   {
-    name: "Hope International School",
-    type: "CBSE · Electronic City",
-    url: "https://www.school.hopeglob.com/",
-    image: previewHope,
-  },
-  {
-    name: "Saraswathi Vidyalaya",
-    type: "State Board · Basavanagudi",
-    url: "https://www.saraswathividyalaya.edu.in/",
-    image: previewSaraswathi,
+    name: "New Oxford School",
+    type: "CBSE · Sarjapura",
+    url: "https://newoxfordschool.in",
+    image: previewNewOxford,
   },
 ];
 
@@ -43,7 +36,7 @@ const PortfolioSection = () => {
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
           {portfolioItems.map((item, i) => (
             <a
               key={i}

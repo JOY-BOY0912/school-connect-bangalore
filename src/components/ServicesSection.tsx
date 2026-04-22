@@ -1,4 +1,4 @@
-import { Globe, MessageSquare, PhoneCall, Mail } from "lucide-react";
+import { Globe, Smartphone, Image as ImageIcon, FileText } from "lucide-react";
 
 const services = [
   {
@@ -7,19 +7,19 @@ const services = [
     desc: "Clean, mobile-friendly, and easy to update. All your school info in one place — admissions, fees, gallery, contact details.",
   },
   {
-    icon: MessageSquare,
-    title: "Admission System",
-    desc: "Online forms that capture parent inquiries. Integrated with WhatsApp so you can track and respond quickly.",
+    icon: Smartphone,
+    title: "Mobile-Friendly Design",
+    desc: "Most parents check school websites on their phone. We make sure everything looks neat and loads fast on mobile too.",
   },
   {
-    icon: PhoneCall,
-    title: "AI Call & Chat Support",
-    desc: "Reduce manual work for staff. Answer common parent questions automatically — even after office hours.",
+    icon: ImageIcon,
+    title: "Photo Gallery & Updates",
+    desc: "Easily share school events, classroom activities, and announcements. Parents stay informed without much effort from your side.",
   },
   {
-    icon: Mail,
-    title: "Follow-up Automation",
-    desc: "Stay connected with parents without extra effort. Reminders and updates go out on their own.",
+    icon: FileText,
+    title: "Admission Inquiry Form",
+    desc: "Simple online form so parents can reach out. You get their details directly — no missed inquiries.",
   },
 ];
 
