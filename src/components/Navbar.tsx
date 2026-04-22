@@ -10,11 +10,14 @@ const Navbar = ({ onDemoClick }: NavbarProps) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-surface/90 backdrop-blur border-b border-border">
+    <nav className="sticky top-0 z-50 bg-surface/80 backdrop-blur-md border-b border-border/60">
       <div className="container flex items-center justify-between h-16">
-        <div className="font-heading font-bold text-xl text-foreground">
+        <a href="#" className="flex items-center gap-2 font-heading font-bold text-xl text-foreground">
+          <span className="w-8 h-8 rounded-lg bg-primary-gradient flex items-center justify-center text-primary-foreground text-sm shadow-glow">
+            I
+          </span>
           Ishy<span className="text-primary">ukt</span>
-        </div>
+        </a>
 
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
           <a href="#services" className="hover:text-foreground transition-colors">Services</a>
