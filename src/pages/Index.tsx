@@ -3,11 +3,9 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TrustSection from "@/components/TrustSection";
 import ServicesSection from "@/components/ServicesSection";
-import ProblemsSection from "@/components/ProblemsSection";
 import ResultsSection from "@/components/ResultsSection";
 import ProcessSection from "@/components/ProcessSection";
 import PortfolioSection from "@/components/PortfolioSection";
-import PricingSection from "@/components/PricingSection";
 import StartSimpleSection from "@/components/StartSimpleSection";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
@@ -20,13 +18,11 @@ const Index = () => {
     <div className="min-h-screen">
       <Navbar onDemoClick={() => setDemoOpen(true)} />
       <Hero onDemoClick={() => setDemoOpen(true)} />
-      <ProblemsSection />
-        <ServicesSection />
-        <ResultsSection />
+      <ServicesSection />
+      <ResultsSection />
       <TrustSection />
       <ProcessSection />
       <PortfolioSection />
-      <PricingSection onDemoClick={() => setDemoOpen(true)} />
       <StartSimpleSection />
       <FinalCTA onDemoClick={() => setDemoOpen(true)} />
       <Footer />

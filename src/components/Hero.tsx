@@ -27,7 +27,7 @@ const Hero = ({ onDemoClick }: HeroProps) => {
           </div>
 
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] mb-6">
-            Simple websites for schools that{" "}
+            Smart websites for schools that{" "}
             <span className="relative inline-block">
               <span className="relative z-10 bg-primary-gradient bg-clip-text text-transparent">
                 actually work
