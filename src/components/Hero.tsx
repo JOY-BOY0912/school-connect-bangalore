@@ -28,14 +28,12 @@ const Hero = ({ onDemoClick }: HeroProps) => {
 
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] mb-6">
             Smart websites for schools that{" "}
-            <span className="relative inline-block">
-              <span className="relative z-10 bg-primary-gradient bg-clip-text text-transparent">
-                actually work
-              </span>
+            <span className="relative inline-block whitespace-nowrap">
               <span
                 aria-hidden
-                className="absolute left-0 right-0 bottom-1 h-2 bg-accent/30 -z-0 rounded"
+                className="absolute left-0 right-0 bottom-1 h-3 bg-accent/30 rounded -z-10"
               />
+              <span className="relative text-primary">actually work</span>
             </span>
           </h1>
 
