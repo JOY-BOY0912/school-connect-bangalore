@@ -28,11 +28,14 @@ const ServicesSection = () => {
     <section id="services" className="py-16 md:py-24">
       <div className="container">
         <div className="text-center mb-12">
-          <h2 className="font-heading text-2xl md:text-3xl font-bold text-foreground mb-3">
-            What We Do for Schools
+          <span className="inline-block text-xs font-semibold tracking-wider uppercase text-primary mb-3">
+            What we do
+          </span>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-3">
+            Built Keeping School Staff in Mind
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Everything is built keeping school staff in mind. Simple to use, no training needed.
+            Simple to use, no training needed. Everything in one place.
           </p>
         </div>
 
@@ -40,10 +43,10 @@ const ServicesSection = () => {
           {services.map((s, i) => (
             <div
               key={i}
-              className="bg-card rounded-lg border border-border p-6 hover:shadow-md transition-shadow"
+              className="group relative bg-card rounded-2xl border border-border p-6 shadow-soft hover:shadow-card hover:-translate-y-1 transition-smooth"
             >
-              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                <s.icon className="w-5 h-5 text-primary" />
+              <div className="w-12 h-12 rounded-xl bg-primary-soft flex items-center justify-center mb-4 group-hover:bg-primary-gradient transition-smooth">
+                <s.icon className="w-5 h-5 text-primary group-hover:text-primary-foreground transition-smooth" />
               </div>
               <h3 className="font-heading font-semibold text-foreground mb-2">{s.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
