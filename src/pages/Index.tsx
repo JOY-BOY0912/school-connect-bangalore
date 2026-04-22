@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import TrustSection from "@/components/TrustSection";
 import ServicesSection from "@/components/ServicesSection";
-import AIToolsSection from "@/components/AIToolsSection";
 import ProblemsSection from "@/components/ProblemsSection";
 import ResultsSection from "@/components/ResultsSection";
 import ProcessSection from "@/components/ProcessSection";
@@ -22,9 +21,8 @@ const Index = () => {
       <Navbar onDemoClick={() => setDemoOpen(true)} />
       <Hero onDemoClick={() => setDemoOpen(true)} />
       <ProblemsSection />
-      <ServicesSection />
-      <AIToolsSection />
-      <ResultsSection />
+        <ServicesSection />
+        <ResultsSection />
       <TrustSection />
       <ProcessSection />
       <PortfolioSection />
