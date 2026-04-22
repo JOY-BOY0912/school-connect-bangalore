@@ -22,7 +22,7 @@ const Navbar = ({ onDemoClick }: NavbarProps) => {
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
           <a href="#services" className="hover:text-foreground transition-colors">Services</a>
           <a href="#results" className="hover:text-foreground transition-colors">Results</a>
-          <a href="#pricing" className="hover:text-foreground transition-colors">Pricing</a>
+          <a href="#portfolio" className="hover:text-foreground transition-colors">Our Work</a>
           <a href="#testimonials" className="hover:text-foreground transition-colors">Testimonials</a>
         </div>
 
@@ -39,7 +39,7 @@ const Navbar = ({ onDemoClick }: NavbarProps) => {
         <div className="md:hidden border-t border-border bg-surface p-4 space-y-3">
           <a href="#services" className="block text-sm py-2" onClick={() => setOpen(false)}>Services</a>
           <a href="#results" className="block text-sm py-2" onClick={() => setOpen(false)}>Results</a>
-          <a href="#pricing" className="block text-sm py-2" onClick={() => setOpen(false)}>Pricing</a>
+          <a href="#portfolio" className="block text-sm py-2" onClick={() => setOpen(false)}>Our Work</a>
           <a href="#testimonials" className="block text-sm py-2" onClick={() => setOpen(false)}>Testimonials</a>
           <Button className="w-full" size="sm" onClick={() => { setOpen(false); onDemoClick(); }}>Get Free Demo</Button>
         </div>
