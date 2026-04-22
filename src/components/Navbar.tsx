@@ -16,7 +16,7 @@ const Navbar = ({ onDemoClick }: NavbarProps) => {
           <span className="w-8 h-8 rounded-lg bg-primary-gradient flex items-center justify-center text-primary-foreground text-sm shadow-glow">
             I
           </span>
-          Ishy<span className="text-primary">ukt</span>
+          <span className="text-primary">Ishyukt</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
